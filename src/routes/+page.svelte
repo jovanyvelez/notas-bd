@@ -1,16 +1,43 @@
-<h1 class="titulo">Notas del Curso de Bases de Datos</h1>
+<script>
+    import Temp from '$lib/posts/clase1.md'
+</script>
 
 
-<a class="textsize" href="/sesiones/1">Clase1</a>
+<div class="inicio">
+    <p class="my-element">Creado por Jovany 2024</p>
+</div>
 
-<style>
-	.titulo {
-		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
-	}
+<Temp />
 
-	.textsize {
-		font-size: 20px;
-	}
+<p class="padding"><a href="https://cs50.harvard.edu/sql/2024/notes/0/" >Rerencia a SQL</a></p>
+
+
+<p><a href="https://sqliteonline.com/" target="_blank">Herramienta de práctica</a></p>
+
+<p>
+  <a href="https://cdn.cs50.net/sql/2023/x/lectures/0/src0/longlist.db">Base de datos de ejemplo1</a>
+</p>
+
+<p><a href="https://cdn.cs50.net/sql/2023/x/lectures/1/src1/longlist.db">Base de datos relacional</a></p>
+
+<p><a href="https://cdn.cs50.net/sql/2023/x/lectures/1/src1/sea_lions.db">Base datos leones marinos</a></p>
+
+<p class="my-element">Creado por Jovany 2024</p>
+
+<style lang="postcss">
+    .my-element {
+      @apply bg-blue-200;
+      @apply text-xs;
+      @apply text-right;
+    }
+
+    .inicio {
+      @apply flex;
+      @apply justify-end;
+      @apply bg-blue-200;
+    }
+
+    .padding {
+      margin-top: 10px;
+    }
 </style>
