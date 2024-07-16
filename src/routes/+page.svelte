@@ -1,16 +1,27 @@
 
 
 
-<h1 class="text-center font-semibold text-3xl bg-blue-200 my-20">Notas del Curso de Bases de Datos</h1>
+<h1 class="my-element">Notas del Curso de Bases de Datos</h1>
 
 
 
-  <a class="link link-primary text-center text-3xl font-bold" href="/sesiones/1">Clase 1</a>
+  <a class="inicio" href="/sesiones/1">Clase 1</a>
 
  
 
-<style lang="postcss">
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
+  <style lang="postcss">
+    .my-element {
+      @apply text-center;
+      @apply text-3xl;
+	  @apply font-bold;
+	  @apply bg-blue-200;
+    }
+
+    .inicio {
+      @apply link;
+      @apply text-center;
+      @apply text-3xl;
+	  @apply font-bold;
+	  @apply bg-blue-200;
+    }
 </style>
