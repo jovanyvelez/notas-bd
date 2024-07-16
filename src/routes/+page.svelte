@@ -5,7 +5,7 @@
 
 
 
-  <a class="link text-blue-500 text-center text-3xl font-bold" href="/sesiones/1">Clase 1</a>
+  <a class="link link-primary text-center text-3xl font-bold" href="/sesiones/1">Clase 1</a>
 
  
 
