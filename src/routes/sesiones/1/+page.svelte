@@ -18,9 +18,7 @@
   <a href="https://cdn.cs50.net/sql/2023/x/lectures/0/src0/longlist.db">Base de datos de ejemplo1</a>
 </p>
 
-<p><a href="https://cdn.cs50.net/sql/2023/x/lectures/1/src1/longlist.db">Base de datos relacional</a></p>
 
-<p><a href="https://cdn.cs50.net/sql/2023/x/lectures/1/src1/sea_lions.db">Base datos leones marinos</a></p>
 
 <p class="my-element">Creado por Jovany 2024</p>
 
