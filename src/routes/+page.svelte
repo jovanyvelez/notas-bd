@@ -54,9 +54,7 @@
 		padding: 0;
 	}
 
-	ul > li > p {
-		font-weight: bold;
-	}
+	
 
 	ul ul {
 		margin-top: 10px;
