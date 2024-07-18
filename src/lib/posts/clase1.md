@@ -1,5 +1,5 @@
 
-# <span class="header">Notas de Clase - Sesión 1: Fundamentos de Bases de Datos.</span>
+# <span class="header">Notas de Clase - Sesión 1 y 2: Fundamentos de Bases de Datos.</span>
 
 <div class="dark">
 

@@ -3,7 +3,7 @@
 </div>
 
 <div class="titulo">
-	<span>Notas de Clase - Sesión 2: Modelo Entidad-Relacion.</span>
+	<span>Notas de Clase - Sesión 3 y 4: Modelo Entidad-Relacion.</span>
 </div>
 
 <div class="dark fontSize">
