@@ -32,7 +32,7 @@
             <li>
                 <p>Verificamos que se instaló correctamente</p>
             </li>
-            <li>
+            
                 <ul>
                     <li>
                         <p>
@@ -47,7 +47,7 @@
                         <p>Escribimos <code>Ctrl + D</code> para salir</p>
                     </li>
                 </ul>
-            </li>
+            
         </ul>
         <p>¡Felicidades! Hemos instalado Node.js</p>
     </main>
