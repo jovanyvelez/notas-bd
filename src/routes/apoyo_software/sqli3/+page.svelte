@@ -32,7 +32,7 @@
                 <p><b>Abre el Panel de Control:</b> Presiona <code>Windows + R</code> para abrir el cuadro de diálogo Ejecutar. Escribe <code>control</code> y presiona Enter para abrir el Panel de Control.</p>
             </li>
             <li>
-                <p><b>Accede a la Configuración Avanzada del Sistema:</b> En el Panel de Control, ve a <b>Sistema y Seguridad</b>. Haz clic en <b>Sistema</b>. En el panel izquierdo, haz clic en <b>Configuración avanzada del sistema</b>.</p>
+                <p>Haz clic en <b>Sistema</b>. Luego en el panel izquierdo, haz clic en <b>Configuración avanzada del sistema</b>.</p>
             </li>
         </ol>
 
