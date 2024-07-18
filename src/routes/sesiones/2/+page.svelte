@@ -6,39 +6,87 @@
 	<span>Notas de Clase - Sesión 2: Modelo Entidad-Relacion.</span>
 </div>
 
-<div class="dark">
-<ol>
-    
-    <li style="margin-bottom: 20px;">
-        <a href="https://www.youtube.com/watch?v=TKuxYHb-Hvc" class="textColor"
-        >Video Tutorial Entidad-Relacion</a
-		>
-	</li>
-    
-    <li style="margin-bottom: 20px;">
-        <a href="https://sqliteonline.com/" target="_blank" class="textColor">Herramienta de práctica</a>
-    </li>
+<div class="dark fontSize">
+	<ol>
+		<li style="margin-bottom: 20px;">
+			<p>
+				<a href="https://www.youtube.com/watch?v=TKuxYHb-Hvc" class="textColor"
+					>Video Tutorial Entidad-Relacion</a
+				>
+			</p>
+		</li>
+		<li>
+			<p>
 
-	<li style="margin-bottom: 20px;">
-		<a href="https://cdn.cs50.net/sql/2023/x/lectures/1/src1/longlist.db" class="textColor">Base de datos de ejemplo</a>
-	</li>
+				Modelo Entidad-Relacion
+			</p>
+		</li>
 
-	<li style="margin-bottom: 20px;">
-		<a href="https://cdn.cs50.net/sql/2023/x/lectures/1/src1/sea_lions.db" class="textColor"
-			>Base de datos sea_lions</a
-		>
-	</li>
-</ol>
+		<li>
+			<p>
 
+				Relaciones uno a muchos (one-to-many)
+			</p>
+		</li>
 
+		<li>
+			<p>
 
+				Relaciones muchos a muchos (many-to-many)
+			</p>
+		</li>
 
+		<li>
+			<p>
+
+				Relaciones uno a uno (one-to-one)
+			</p>
+		</li>
+
+		<li>
+			<p>
+
+				Claves primarias (primary keys)
+			</p>
+		</li>
+
+		<li>
+			<p>
+
+				Claves foraneas (foreign keys)
+			</p>
+		</li>
+
+		<li>
+			<p>
+
+				Introducción a Subconsultas (Subqueries o nested queries)
+			</p>
+		</li>
+	</ol>
 </div>
 
-<p><a href="https://cs50.harvard.edu/sql/2024/notes/1/" target="_blank">Teoría del curso</a></p>
+<div class="fontSize">
 
-
-
+	<p><a href="https://cs50.harvard.edu/sql/2024/notes/1/" target="_blank">Apoyo teorico</a></p>
+	
+	<p>
+		<a href="https://sqliteonline.com/" target="_blank">Herramienta de práctica</a>
+	</p>
+	
+	<p>
+	
+		<a href="https://cdn.cs50.net/sql/2023/x/lectures/1/src1/longlist.db"
+			>Base de datos de ejemplo</a
+		>
+	</p>
+	
+	<p>
+		<a href="https://cdn.cs50.net/sql/2023/x/lectures/1/src1/sea_lions.db"
+			>Base de datos sea_lions</a
+		>
+	</p>
+</div>
 
 <style lang="postcss">
 	.my-element {
@@ -75,7 +123,11 @@
 		padding-bottom: 20px;
 	}
 
-    .textColor {
-        color: #e0e0e0;
-    }
+	.textColor {
+		color: #e0e0e0;
+	}
+
+	.fontSize {
+		font-size: 20px;
+	}
 </style>

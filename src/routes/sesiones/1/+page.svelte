@@ -9,7 +9,7 @@
 
 <Temp />
 
-<p class="padding"><a href="https://cs50.harvard.edu/sql/2024/notes/0/" >Rerencia a SQL</a></p>
+<p class="padding"><a href="https://cs50.harvard.edu/sql/2024/notes/0/" >Referencia a SQL</a></p>
 
 
 <p><a href="https://sqliteonline.com/" target="_blank">Herramienta de práctica</a></p>
