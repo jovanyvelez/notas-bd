@@ -3,9 +3,9 @@
 </script>
 
 
-<div class="inicio">
+<!-- <div class="inicio">
     <p class="my-element">Creado por Jovany 2024</p>
-</div>
+</div> -->
 
 <Temp />
 
@@ -20,7 +20,7 @@
 
 
 
-<p class="my-element">Creado por Jovany 2024</p>
+
 
 <style lang="postcss">
     .my-element {
@@ -38,4 +38,6 @@
     .padding {
       margin-top: 10px;
     }
+
+
 </style>

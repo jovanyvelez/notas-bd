@@ -1,6 +1,6 @@
-<div class="inicio">
+<!-- <div class="inicio">
 	<span>Creado por Jovany 2024</span>
-</div>
+</div> -->
 
 <div class="titulo">
 	<span>Notas de Clase - Sesión 3 y 4: Modelo Entidad-Relacion.</span>
