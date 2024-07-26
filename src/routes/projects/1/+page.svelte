@@ -37,18 +37,16 @@
 		}}
 	>
 		<label for="email"> Consulta </label>
-		<div class="myDiv">
+		<div class="grid">
 			<textarea
 				name="consulta"
-				placeholder="Enter query"
-				cols="60"
-				rows="10"
-				style="background-color: papayawhip; padding: 1rem; color: black"
+				placeholder="Ingresa tu consulta SQL"
+				id="responsive-textarea"
 				bind:value={sqlText}
 				on:keydown={() => cambiaSQL()}
 			></textarea>
-			<button formaction="?/query" class="marginYComponent">Enviar</button>
 		</div>
+		<button formaction="?/query" class="marginYComponent">Enviar</button>
 	</form>
 </div>
 
@@ -92,6 +90,24 @@
 		flex-direction: column;
 		margin: 1rem 20px;
 	}
-
+	#responsive-textarea {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        height: auto;
+        min-height: 100px;
+        padding: 10px;
+        box-sizing: border-box;
+        resize: vertical;
+        font-size: 1em;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+        height: 100%;
+		width: 100%;
+		background-color: papayawhip;
+    }
 
 </style>

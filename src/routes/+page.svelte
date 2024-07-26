@@ -5,21 +5,15 @@
   Creado por Jovany 2024
 </div>
 
+
+
 <div class="container">
 	<h1>Notas segundo semestre</h1>
 	<p>
 		<a href="/sesiones/1" target="_blank" class="etiquetasA">Clase 1 y 2</a>
 	</p>
 
-	<ul style="margin-bottom: 20px; margin-left: 20px">
-		<li>
-			<p><a href="/tareas/1" target="_blank" style="color: aquamarine ;">Trabajo Práctico Recuperación Clase 1</a></p>
-		</li>
-		<li>
-			<p><a href="https://cdn.cs50.net/sql/2024/x/psets/0/views/views.db" target="_blank" style="color: aquamarine ;">Base de datos para el taller</a></p>
-		</li>
-		
-	</ul>
+
 
 	<p>
 		<a href="/sesiones/2" target="_blank" class="etiquetasA">Clase 3 y 4</a>

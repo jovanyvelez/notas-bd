@@ -1,6 +1,7 @@
-<!-- <div class="inicio">
-	<span>Creado por Jovany 2024</span>
-</div> -->
+<script>
+	//import Notas from '$lib/posts/Clases3-4.md'
+	import Notas from '$lib/components/SQLTextArea.svelte'
+</script>
 
 <svelte:head>
 	<title>Clases 3 y 4</title>
@@ -11,63 +12,7 @@
 </div>
 
 <div class="dark fontSize">
-	<ol>
-		<li style="margin-bottom: 20px;">
-			<p>
-				<a href="https://www.youtube.com/watch?v=TKuxYHb-Hvc" class="textColor"
-					>Video Tutorial Entidad-Relacion</a
-				>
-			</p>
-		</li>
-		<li>
-			<p>
-
-				Modelo Entidad-Relacion
-			</p>
-		</li>
-
-		<li>
-			<p>
-
-				Relaciones uno a muchos (one-to-many)
-			</p>
-		</li>
-
-		<li>
-			<p>
-
-				Relaciones muchos a muchos (many-to-many)
-			</p>
-		</li>
-
-		<li>
-			<p>
-
-				Relaciones uno a uno (one-to-one)
-			</p>
-		</li>
-
-		<li>
-			<p>
-
-				Claves primarias (primary keys)
-			</p>
-		</li>
-
-		<li>
-			<p>
-
-				Claves foraneas (foreign keys)
-			</p>
-		</li>
-
-		<li>
-			<p>
-
-				Introducción a Subconsultas (Subqueries o nested queries)
-			</p>
-		</li>
-	</ol>
+	<Notas />
 </div>
 
 <div class="fontSize">
@@ -78,7 +23,7 @@
 		<a href="/projects/1" target="_blank" class="etiquetasA">Consultas SQL A la base de datos longlist</a>
 	</p>
 	
-	<p>
+<!-- 	<p>
 	
 		<a href="https://cdn.cs50.net/sql/2023/x/lectures/1/src1/longlist.db"
 			>Base de datos de ejemplo</a
@@ -89,8 +34,20 @@
 		<a href="https://cdn.cs50.net/sql/2023/x/lectures/1/src1/sea_lions.db"
 			>Base de datos sea_lions</a
 		>
-	</p>
+	</p> -->
 </div>
+
+<h2>Trabajo Recuperación Clase #1</h2>
+
+<ul style="margin-bottom: 20px; margin-left: 20px">
+	<li>
+		<p><a href="/tareas/1" target="_blank" style="color: black;">Trabajo Práctico Recuperación Clase 1</a></p>
+	</li>
+	<li>
+		<p><a href="https://cdn.cs50.net/sql/2024/x/psets/0/views/views.db" target="_blank" style="color: black ;">Base de datos para el taller</a></p>
+	</li>
+	
+</ul>
 
 <style lang="postcss">
 	.my-element {
