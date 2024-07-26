@@ -24,7 +24,7 @@ Estas tablas tienen algunas relaciones entre ellas, y por eso llamamos a la base
 
 Consideremos nuestro primer ejemplo. Aquí tienes una imagén de las tablas de autores y libros con las columnas de nombre de autor y título del libro.
 
-<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p6.jpg" alt="tabla" width="60%">
+<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p6.jpg" alt="tabla" width="100%">
 
 Solo mirando estas dos columnas, ¿cómo podemos saber quién escribió qué libro? Incluso si asumimos que cada libro está alineado junto a su autor, solo mirando la tabla de autores no obtendríamos información sobre los libros escritos por ese autor.
 
@@ -34,21 +34,21 @@ Algunas posibles formas de organizar libros y autores son...
 
 - Volver a un enfoque de una sola tabla: Este enfoque podría resultar en redundancia (duplicación de datos) si un autor escribe múltiples libros o si un libro está coescrito por múltiples autores. A continuación se muestra una instantánea del enfoque de una sola tabla con algunos datos redundantes.
 
-<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p8.jpg" alt="tabla" width="60%">
+<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p8.jpg" alt="tabla" width="100%">
 
 Después de considerar estas ideas, parece que tener dos tablas diferentes es el enfoque más eficiente. Veamos algunas formas diferentes en que las tablas pueden estar relacionadas entre sí en las bases de datos relacionales.
 
 Consideremos este caso, donde cada autor escribe solo un libro y cada libro es escrito por un solo autor. Esto se llama una relación uno a uno.
 
-<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p10.jpg" alt="tabla" width="60%">
+<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p10.jpg" alt="tabla" width="100%">
 
 - Por otro lado, si un autor puede escribir múltiples libros, la relación es una relación de uno a muchos.
 
-<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p11.jpg" alt="tabla" width="60%">
+<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p11.jpg" alt="tabla" width="100%">
 
 Aquí, vemos otra situación donde no solo un autor puede escribir múltiples libros, sino que los libros también pueden estar coescritos por múltiples autores. Esta es una relación de muchos a muchos.
 
-<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p12.jpg" alt="tabla" width="60%">
+<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p12.jpg" alt="tabla" width="100%">
 
 # Diagramas de Entidad-Relación
 
@@ -58,7 +58,7 @@ Aquí tienes un diagrama ER para las tablas en longlist.db.
 
 
 
-<img src="https://res.cloudinary.com/dqlbbx7ud/image/upload/v1722014240/qx49ntsw9ar7lzjg6lrm.png" alt="ER" width="60%">
+<img src="https://res.cloudinary.com/dqlbbx7ud/image/upload/v1722014240/qx49ntsw9ar7lzjg6lrm.png" alt="ER" width="100%">
 
 Cada tabla es una entidad en nuestra base de datos. Las relaciones entre las tablas, o entidades, están representadas por los verbos que marcan las líneas que conectan las entidades. Cada línea en este diagrama está en la notación de "pie de cuervo" (crow’s foot notation).
 
@@ -66,26 +66,26 @@ Cada tabla es una entidad en nuestra base de datos. Las relaciones entre las tab
 - La segunda línea con una línea perpendicular se parece a un 1 marcado en la línea. Una entidad con esta flecha debe tener al menos una fila que se relacione con ella en la otra tabla.
 - La tercera línea, que se parece a un pie de cuervo, tiene muchas ramas. Esta línea significa que la entidad está relacionada con muchas filas de otra tabla.
 
-<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p17.jpg" alt="ER" width="60%">
+<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p17.jpg" alt="ER" width="100%">
 
 Por ejemplo:
 
 - Leemos la notación de izquierda a derecha. Un autor escribe un libro (o, cada autor puede tener un libro asociado con él).
 
-<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p18.jpg" alt="ER" width="60%">
+<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p18.jpg" alt="ER" width="100%">
 
 Ahora, no solo un autor escribe un libro, sino que un libro también es escrito por un autor.
 
-<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p19.jpg" alt="ER" width="60%">
+<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p19.jpg" alt="ER" width="100%">
 
 Con esta adición, un autor escribe al menos un libro y un libro es escrito por al menos un autor. Dicho de otra manera, un autor puede estar asociado con uno o varios libros y un libro puede ser escrito por uno o varios autores.
 
-<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p20.jpg" alt="ER" width="60%">
+<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p20.jpg" alt="ER" width="100%">
 
 Volvamos a ver el diagrama ER para nuestra base de datos.
 
 
-<img src="https://res.cloudinary.com/dqlbbx7ud/image/upload/v1722014240/qx49ntsw9ar7lzjg6lrm.png" alt="ER" width="60%">
+<img src="https://res.cloudinary.com/dqlbbx7ud/image/upload/v1722014240/qx49ntsw9ar7lzjg6lrm.png" alt="ER" width="100%">
 
 Al observar las líneas que conectan las entidades de Libro y Traductor, podemos decir que los libros no necesitan tener un traductor. Pueden tener de cero a muchos traductores. Sin embargo, un traductor en la base de datos traduce al menos un libro, y posiblemente muchos.
 
@@ -106,7 +106,7 @@ Al observar las líneas que conectan las entidades de Libro y Traductor, podemos
 
 - En el caso de los libros, cada libro tiene un identificador único llamado ISBN. En otras palabras, si buscas un libro por su ISBN, solo se encontrará un libro. En términos de base de datos, el ISBN es una clave primaria: un identificador que es único para cada elemento en una tabla.
 
-<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p29.jpg" alt="ER" width="60%">
+<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p29.jpg" alt="ER" width="100%">
 
 Inspirados en esta idea del ISBN, ¡podemos imaginar asignar identificadores únicos a nuestros editores, autores y traductores! Cada uno de estos identificadores sería la clave primaria de la tabla a la que pertenece.
 
@@ -116,7 +116,7 @@ Inspirados en esta idea del ISBN, ¡podemos imaginar asignar identificadores ún
 
   Una clave foránea es una clave primaria tomada de una tabla diferente. Al hacer referencia a la clave primaria de otra tabla, ayuda a relacionar las tablas formando un vínculo entre ellas.
 
-<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p31.jpg" alt="ER" width="60%">
+<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p31.jpg" alt="ER" width="100%">
 
 Observa cómo la clave primaria de la tabla de libros ahora es una columna en la tabla de calificaciones. Esto ayuda a formar una relación de uno a muchos entre las dos tablas: un libro con un título (encontrado en la tabla de libros) puede tener múltiples calificaciones (encontradas en la tabla de calificaciones).
 
@@ -126,7 +126,7 @@ Afortunadamente, no necesariamente tenemos que usar el ISBN como clave primaria.
 
 Anteriormente, vimos cómo implementar la relación de uno a muchos entre las entidades de libros y calificaciones. Aquí hay un ejemplo de una relación de muchos a muchos.
 
-<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p40.jpg" alt="ER" width="60%">
+<img src="https://cs50.harvard.edu/sql/2024/notes/1/images/p40.jpg" alt="ER" width="100%">
 
 Ahora hay una tabla llamada `authored` que mapea la clave primaria de los libros (`book_id`) a la clave primaria de los autores (`author_id`).
 
