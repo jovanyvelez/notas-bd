@@ -16,8 +16,6 @@
 </div>
 
 <div class="fontSize">
-
-	<p><a href="https://cs50.harvard.edu/sql/2024/notes/1/" target="_blank">Apoyo teorico harvard</a></p>
 	
 	<p>
 		<a href="/projects/1" target="_blank" class="etiquetasA">Consultas SQL A la base de datos longlist</a>
@@ -37,18 +35,20 @@
 	</p> -->
 </div>
 
-<h2>Trabajo Recuperación Clase #1</h2>
 
+<div class="dark">
+	<h2>Trabajo Recuperación Clase #1</h2>
+	
 <ul style="margin-bottom: 20px; margin-left: 20px">
 	<li>
-		<p><a href="/tareas/1" target="_blank" style="color: black;">Trabajo Práctico Recuperación Clase 1</a></p>
+		<p><a href="/tareas/1" target="_blank" style="color: white ;">Trabajo Práctico Recuperación Clase 1</a></p>
 	</li>
 	<li>
-		<p><a href="https://cdn.cs50.net/sql/2024/x/psets/0/views/views.db" target="_blank" style="color: black ;">Base de datos para el taller</a></p>
+		<p><a href="https://cdn.cs50.net/sql/2024/x/psets/0/views/views.db" target="_blank" style="color: white ;">Base de datos para el taller</a></p>
 	</li>
 	
 </ul>
-
+</div>
 <style lang="postcss">
 	.my-element {
 		@apply bg-blue-200;

@@ -145,5 +145,8 @@ Ahora hay una tabla llamada `authored` que mapea la clave primaria de los libros
   Un ID actualizado aún necesita ser único. Dado eso, los IDs a menudo se abstraen y rara vez los cambiamos.
 
 
+<a style="color: white;" href="https://cs50.harvard.edu/sql/2024/notes/1/">Adaptacion de Curso CS50 Universidad de Harvard</a>
+
+
 
 
