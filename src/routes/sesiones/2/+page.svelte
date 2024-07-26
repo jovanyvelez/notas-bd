@@ -2,6 +2,10 @@
 	<span>Creado por Jovany 2024</span>
 </div> -->
 
+<svelte:head>
+	<title>Clases 3 y 4</title>
+</svelte:head>
+
 <div class="titulo">
 	<span>Notas de Clase - Sesión 3 y 4: Modelo Entidad-Relacion.</span>
 </div>
@@ -68,10 +72,10 @@
 
 <div class="fontSize">
 
-	<p><a href="https://cs50.harvard.edu/sql/2024/notes/1/" target="_blank">Apoyo teorico</a></p>
+	<p><a href="https://cs50.harvard.edu/sql/2024/notes/1/" target="_blank">Apoyo teorico harvard</a></p>
 	
 	<p>
-		<a href="https://sqliteonline.com/" target="_blank">Herramienta de práctica</a>
+		<a href="/projects/1" target="_blank" class="etiquetasA">Consultas SQL A la base de datos longlist</a>
 	</p>
 	
 	<p>

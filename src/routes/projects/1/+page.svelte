@@ -1,11 +1,24 @@
 <script>
 	import { enhance } from '$app/forms';
 
+	import cambiar from '$lib/propias/textToSQL'
+
+
 	let queryKeys;
 
 	let myQuery = { result: false, datos: [] };
+
+	let sqlText = '';
+
+	const cambiaSQL = () => {
+		sqlText = cambiar(sqlText);
+	}
+
 </script>
 
+<svelte:head>
+	<title>Consultas Longlist</title>
+</svelte:head>
 <div>
 	<form
 		method="POST"
@@ -19,29 +32,30 @@
 					myQuery.result = true;
 					myQuery.datos = Query.datos?.sqlRows;
 					queryKeys = Object.keys(myQuery.datos[0]);
-					console.log(myQuery.datos);
 				}
 			};
-			// `update` is a function which triggers the default logic that would be triggered if this callback wasn't set
 		}}
 	>
 		<label for="email"> Consulta </label>
-
-		<textarea
-			name="consulta"
-			placeholder="Enter query"
-			cols="60"
-			rows="10"
-			style="background-color: papayawhip; padding: 1rem; color: black"
-		></textarea>
-		<button formaction="?/query" class="marginYComponent">Enviar</button>
+		<div class="myDiv">
+			<textarea
+				name="consulta"
+				placeholder="Enter query"
+				cols="60"
+				rows="10"
+				style="background-color: papayawhip; padding: 1rem; color: black"
+				bind:value={sqlText}
+				on:keydown={() => cambiaSQL()}
+			></textarea>
+			<button formaction="?/query" class="marginYComponent">Enviar</button>
+		</div>
 	</form>
 </div>
 
 <div class="myDiv">
 	{#if myQuery.datos}
 		{#each myQuery.datos as row}
-			<div >
+			<div>
 				{#each queryKeys as key}
 					<p>
 						<span class="column">{key}</span>{': ' + row[key]}
@@ -52,6 +66,8 @@
 		{/each}
 	{/if}
 </div>
+
+
 
 <style>
 	.column {
@@ -72,8 +88,10 @@
 	}
 
 	.myDiv {
-        display: flex;
-        flex-direction: column;
+		display: flex;
+		flex-direction: column;
 		margin: 1rem 20px;
 	}
+
+
 </style>

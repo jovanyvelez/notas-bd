@@ -25,10 +25,6 @@
 		<a href="/sesiones/2" target="_blank" class="etiquetasA">Clase 3 y 4</a>
 	</p>
 
-	<p>
-		<a href="/projects/1" target="_blank" class="etiquetasA">software del curso version alpha</a>
-	</p>
-
 	<ul>
 		<li>
 			<p>Sotware de apoyo para el curso</p>
@@ -43,6 +39,8 @@
 		</li>
 	</ul>
 </div>
+
+
 
 <style>
 	.container {

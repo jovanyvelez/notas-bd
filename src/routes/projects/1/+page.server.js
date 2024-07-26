@@ -15,11 +15,12 @@ export const actions = {
         try {
             const { rows } = await turso.execute(sqlString);
             sqlRows = rows;
-
+            if(sqlRows.length === 0) {
+                sqlRows = [{name:'En tu consulta no hay resultados',code:'No hay resultados'}]
+            }
         } catch (error) {
 
 
-            console.error(error);
             sqlRows = [
                 { name: error.message, code: error.code },
             ];

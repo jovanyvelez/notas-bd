@@ -2,9 +2,9 @@
     import Tarea1 from '$lib/posts/tarea-1.md';
 </script>
 
-<div >
-
-</div>
+<svelte:head>
+	<title>Tarea 1</title>
+</svelte:head>
 <Tarea1 />
 
 

@@ -2,7 +2,9 @@
     import Temp from '$lib/posts/clase1.md'
 </script>
 
-
+<svelte:head>
+	<title>Clases 1 y 2</title>
+</svelte:head>
 <!-- <div class="inicio">
     <p class="my-element">Creado por Jovany 2024</p>
 </div> -->
