@@ -36,7 +36,7 @@
 </div>
 
 <h1>Notas de Clase</h1>
-<div style="background: #1e293b;">
+<div style="background: #1e293b; margin-bottom: 10px">
 <div class="font-size container">
 	<button class="link-button" onclick={() => show(0)}>Claves Primarias y Foraneas</button>
 
