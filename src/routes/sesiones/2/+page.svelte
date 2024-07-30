@@ -2,30 +2,28 @@
 	//import Notas from '$lib/posts/Clases3-4.md'
 	import Notas from '$lib/components/SQLTextArea.svelte';
 	import Subqueries from '$lib/components/Subqueries.svelte';
+	import Joins from '$lib/components/Joins.svelte';
 	let mostrarKey = $state(false);
 	let mostrarSubquery = $state(false);
 
+	let mostrar = $state([false, false, false]);
+	let panel = $state(false);
+
 	const show = (valor: number) => {
-		if (valor === 1 && !mostrarKey) {
-			mostrarKey = !mostrarKey;
-			mostrarSubquery = !mostrarKey;
+
+		if (mostrar[valor]) {
+			mostrar[valor] = false;
+			panel = false;
 			return;
 		}
 
-		if (valor === 1 && mostrarKey) {
-			mostrarKey = false;
+		for(let i = 0; i < mostrar.length; i++){
+			mostrar[i] = false;
 		}
 
-		if (valor == 2 && !mostrarSubquery) {
-			mostrarSubquery = !mostrarSubquery;
-			mostrarKey= !mostrarSubquery
-			return;
-		}
-
-		if(valor == 2 && mostrarSubquery) {
-			mostrarSubquery = false;
-		} 
-
+		mostrar[valor] = true;
+		panel = true;
+		return;
 	};
 </script>
 
@@ -34,51 +32,59 @@
 </svelte:head>
 
 <div class="titulo">
-	<span>Notas de Clase - Sesión 3 y 4: Modelo Entidad-Relacion.</span>
+	<span>Notas de Clase - Sesión 4,5 y 6: Modelo Entidad-Relacion.</span>
 </div>
 
-{mostrarKey}
-{mostrarSubquery}
-<div class="container">
-	<button class="link-button" onclick={() => show(1)}>Claves Primarias y Foraneas</button>
+<h1>Notas de Clase</h1>
+<div style="background: #1e293b;">
+<div class="font-size container">
+	<button class="link-button" onclick={() => show(0)}>Claves Primarias y Foraneas</button>
 
-	<button class="link-button" onclick={() => show(2)}>Subconsultas</button>
+	<button class="link-button" onclick={() => show(1)}>Subconsultas</button>
+
+	<button class="link-button" onclick={() => show(2)}>Joins</button>
 </div>
+</div>
+{#if panel}
+	<div class="dark container">
+		{#if mostrar[0]}
+			<div class="dark fontSize">
+				<Notas />
+			</div>
+		{/if}
 
-<div class="dark fontSize">
-{#if mostrarKey}
-	<div class="dark fontSize">
-		<Notas />
+		{#if mostrar[1]}
+			<div class="dark fontSize">
+				<Subqueries />
+			</div>
+		{/if}
+
+		{#if mostrar[2]}
+			<div class="dark fontSize">
+				<Joins />
+			</div>
+		{/if}
 	</div>
 {/if}
 
-{#if mostrarSubquery}
-	<div class="dark fontSize">
-		<Subqueries />
-	</div>
-{/if}
-
-</div>
-
-<div class="fontSize">
+<h1>Recursos para la clase</h1>
+<div class="dark">
 	<p>
 		<a href="/projects/1" target="_blank" class="etiquetasA"
 			>Consultas SQL A la base de datos longlist</a
 		>
 	</p>
 
+	<p>
+		<a href="https://cdn.cs50.net/sql/2023/x/lectures/1/src1/sea_lions.db" class="etiquetasA">Descarga sea_lions.db</a>
+	</p>
 
 	<p>
-	
-		<a href="https://cs50.harvard.edu/sql/2024/notes/1/"
-			>Notas Harvard</a
-		>
+		<a href="https://cs50.harvard.edu/sql/2024/notes/1/" class="etiquetasA">Notas Harvard</a>
 	</p>
-	
-
 </div>
 
-<div class="dark">
+<!-- <div class="dark">
 	<h2>Trabajo Recuperación Clase #1</h2>
 
 	<ul style="margin-bottom: 20px; margin-left: 20px">
@@ -99,7 +105,7 @@
 			</p>
 		</li>
 	</ul>
-</div>
+</div> -->
 
 <style lang="postcss">
 	/* 	.my-element {
@@ -111,6 +117,8 @@
 	.etiquetasA {
 		@apply link;
 		@apply link-primary;
+		@apply text-slate-300;
+		@apply hover:text-slate-100;
 	}
 
 	.titulo {
@@ -147,7 +155,7 @@
 	.link-button {
 		background-color: transparent;
 		border: none;
-		color: #007bff;
+		color: #cbd5e1;
 		cursor: pointer;
 		font-size: 1.2rem;
 		padding: 0;
@@ -169,5 +177,6 @@
 		max-width: 1000px;
 		width: 100%;
 		box-sizing: border-box;
+		font-size: 20px;
 	}
 </style>

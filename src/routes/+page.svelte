@@ -10,13 +10,13 @@
 <div class="container">
 	<h1>Notas segundo semestre</h1>
 	<p>
-		<a href="/sesiones/1" target="_blank" class="etiquetasA">Clase 1 y 2</a>
+		<a href="/sesiones/1" target="_blank" class="etiquetasA">Unidad 1</a>
 	</p>
 
 
 
 	<p>
-		<a href="/sesiones/2" target="_blank" class="etiquetasA">Clase 3 y 4</a>
+		<a href="/sesiones/2" target="_blank" class="etiquetasA">Unidad 2</a>
 	</p>
 
 	<ul>

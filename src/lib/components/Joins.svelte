@@ -1,5 +1,5 @@
 <script>
-    import Post from '../../lib/posts/subqueries.md';
+    import Post from '../../lib/posts/joins.md';
 
 </script>
 
