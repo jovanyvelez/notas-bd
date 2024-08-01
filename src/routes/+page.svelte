@@ -10,13 +10,15 @@
 <div class="container">
 	<h1>Notas segundo semestre</h1>
 	<p>
-		<a href="/sesiones/1" target="_blank" class="etiquetasA">Unidad 1</a>
+		<a href="/sesiones/1" target="_blank" class="etiquetasA">Unidad 1 Consultas Simples</a>
 	</p>
 
-
+	<p>
+		<a href="/sesiones/2" target="_blank" class="etiquetasA">Unidad 2 Relaciones, tipos de indices y consultas tablas relacionadas</a>
+	</p>
 
 	<p>
-		<a href="/sesiones/2" target="_blank" class="etiquetasA">Unidad 2</a>
+		<a href="/sesiones/3" target="_blank" class="etiquetasA">Unidad 3 Creando esquemas de bases de datos y su creacion sqli3</a>
 	</p>
 
 	<ul>

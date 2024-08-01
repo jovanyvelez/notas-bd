@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Clases 1 y 2</title>
+	<title>Clases 1, 2 y 3</title>
 </svelte:head>
 <!-- <div class="inicio">
     <p class="my-element">Creado por Jovany 2024</p>

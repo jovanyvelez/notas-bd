@@ -1,82 +1,35 @@
 <script lang="ts">
 	//import Notas from '$lib/posts/Clases3-4.md'
-	import Notas from '$lib/components/SQLTextArea.svelte';
-	import Subqueries from '$lib/components/Subqueries.svelte';
-	import Joins from '$lib/components/Joins.svelte';
-	let mostrarKey = $state(false);
-	let mostrarSubquery = $state(false);
-
-	let mostrar = $state([false, false, false]);
-	let panel = $state(false);
-
-	const show = (valor: number) => {
-		if (mostrar[valor]) {
-			mostrar[valor] = false;
-			panel = false;
-			return;
-		}
-
-		for (let i = 0; i < mostrar.length; i++) {
-			mostrar[i] = false;
-		}
-
-		mostrar[valor] = true;
-		panel = true;
-		return;
-	};
+	import Sesion3 from '$lib/components/Sesion3.svelte';
+	import Tarea3 from '$lib/components/Tarea3.svelte';
 </script>
 
 <svelte:head>
-	<title>Clases 4,5 y 6</title>
+	<title>Clases 7 y 8</title>
 </svelte:head>
 
 <div class="titulo">
-	<span>Notas de Clase - Clases 4,5,6: Modelo Entidad-Relacion.</span>
+	<span>Notas de Clase - Sesión 7,8: Diseño y creación de base de datos.</span>
 </div>
 
 <h1>Notas de Clase</h1>
-<div style="background: #1e293b; margin-bottom: 10px">
-	<div class="font-size container">
-		<button class="link-button" onclick={() => show(0)}>Claves Primarias y Foraneas</button>
 
-		<button class="link-button" onclick={() => show(1)}>Subconsultas</button>
-
-		<button class="link-button" onclick={() => show(2)}>Joins</button>
+<div class="dark container">
+	<div class="dark fontSize">
+		<Sesion3 />
 	</div>
 </div>
-{#if panel}
-	<div class="dark container">
-		{#if mostrar[0]}
-			<div class="dark fontSize">
-				<Notas />
-			</div>
-		{/if}
 
-		{#if mostrar[1]}
-			<div class="dark fontSize">
-				<Subqueries />
-			</div>
-		{/if}
 
-		{#if mostrar[2]}
-			<div class="dark fontSize">
-				<Joins />
-			</div>
-		{/if}
-	</div>
-{/if}
+<Tarea3 />
 
 <h1>Recursos para la clase</h1>
 <div class="dark">
-	<p>
-		<a href="/projects/1" target="_blank" class="etiquetasA"
-			>Consultas SQL A la base de datos longlist</a
-		>
-	</p>
+
 
 	<p>
-		<a href="https://cdn.cs50.net/sql/2023/x/lectures/1/src1/sea_lions.db" class="etiquetasA"
-			>Descarga sea_lions.db</a
+		<a href="https://cdn.cs50.net/sql/2023/x/lectures/1/src1/longlist.db" class="etiquetasA"
+			>Descarga de longlist -version mejorada</a
 		>
 	</p>
 
@@ -109,12 +62,12 @@
 </div> -->
 
 <style lang="postcss">
-	/* 	.my-element {
+	.my-element {
 		@apply bg-blue-200;
 		@apply text-xs;
 		@apply text-right;
 		@apply text-blue-500;
-	} */
+	}
 	.etiquetasA {
 		@apply link;
 		@apply link-primary;
@@ -130,12 +83,12 @@
 		@apply py-10;
 	}
 
-	/* 	.inicio {
+	.inicio {
 		@apply flex;
 		@apply justify-end;
 		@apply bg-blue-200;
 		@apply py-2;
-	} */
+	}
 
 	.dark {
 		@apply bg-slate-800;
@@ -145,10 +98,10 @@
 		padding-bottom: 20px;
 	}
 
-	/* .textColor {
+	.textColor {
 		color: #e0e0e0;
 	}
- */
+
 	.fontSize {
 		font-size: 20px;
 	}
