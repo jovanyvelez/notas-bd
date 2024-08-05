@@ -21,6 +21,10 @@
 		<a href="/sesiones/3" target="_blank" class="etiquetasA">Unidad 3 Creando esquemas de bases de datos y su creacion sqli3</a>
 	</p>
 
+	<p>
+		<a href="/sesiones/Cuatro" target="_blank" class="etiquetasA">Unidad 4 Creando bases de datos en un servicio web database as a service</a>
+	</p>
+
 	<ul>
 		<li>
 			<p>Sotware de apoyo para el curso</p>
@@ -31,6 +35,10 @@
 				<li>
 					<p><a href="/apoyo_software/nodejs" target="_blank" class="etiquetasA">Node js</a></p>
 				</li>
+				<li>
+					<p>
+						<a href="/apoyo_software/gitwindows" class="etiquetasA">git</a>
+					</p>
 			</ul>
 		</li>
 	</ul>
